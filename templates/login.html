@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="icon" type="images/x-icon" href="{{ url_for('static', filename='myntra-logo.png') }}">
+
+</head>
+<body>
+  <header class="header">
+    <a style="margin-left: 10px" href="#" class="logo"
+      ><figure class="card-img">
+        <img src="{{ url_for('static', filename='myntra-logo.png') }}" width="50" height="50" loading="lazy">
+    </figure></a>
+</header>
+
+    <div class="container">
+        <!-- You can use the same URL for the top image -->
+        <a style="margin-left: 10px" href="#" class="logo"
+          ><figure class="card-img">
+            <img src="{{ url_for('static', filename='myntra-logo.png') }}" width="50" height="50" loading="lazy">
+        </figure></a>
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+                <form action="/login" method="post">
+                    <div class="input-field">
+                        <input type="email" placeholder="email" id="email" name="email" />
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" placeholder="password" name="password" />
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="input-field button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Not a member? <a href="/register" class="text">Register</a></span>
+                    <br>
+                    <br>
+                    <span class="text">Let's chat? <a href="/contact" class="text">Contact Us</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

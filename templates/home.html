@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="icon" type="images/x-icon" href="{{ url_for('static', filename='myntra-logo.png') }}">
+ 
+</head>
+
+<body>
+        
+    <!-- Navbar starts here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg justify-content-start"> <!-- Added justify-content-start class to move the navbar content to the left corner -->
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='myntra-logo.png') }}" alt="image" width="60" height="60"></a>
+            <div class="collapse navbar-collapse list-items justify-content-end" id="navbarSupportedContent"> <!-- Added justify-content-end class to move content to the right corner -->
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <a href="/men">Men</a>   
+                    <a href="/women">Women</a> 
+                    <a href="/kids">Kids</a> 
+                    
+                </ul>
+                
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+                  
+
+            </div>
+        </div>
+    </nav>
+    <!-- Home banner -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ms-5 mt-4">
+                <img src="{{ url_for('static', filename='home-banner.jpg') }}"></a>
+            
+                </div>
+        </div>
+    </div>
+    <!-- Deals section -->
+    <div class="container mt-4">
+        <div class="d-flex justify-content-center">
+          <div class="deals-section">
+                    <h2 style="text-align: center;" ><b>Crazy Deals</b></h2>
+                    <p style="text-align: center;"><b>Lowest price on best brands.</b></p>
+          </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+body {
+    background-color: #f8f9fa; /* Set background color */
+}
+
+.navbar {
+    background-color: #343a40; /* Set navbar background color */
+}
+
+.navbar-brand img {
+    border-radius: 50%; /* Make the navbar logo round */
+}
+
+form {
+    max-width: 500px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #ffffff; /* Set form background color */
+    border-radius: 10px; /* Add border radius to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow to the form */
+}
+
+label {
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Set input width to 100% */
+    padding: 10px; /* Add padding to inputs */
+    margin-bottom: 15px; /* Add margin bottom to inputs */
+    border: 1px solid #ced4da; /* Set border color */
+    border-radius: 5px; /* Add border radius to inputs */
+    box-sizing: border-box; /* Ensure padding and border included in width */
+}
+
+button.addressbtn {
+    background-color: #343a40; /* Set button background color */
+    color: #ffffff; /* Set button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding to button */
+    border-radius: 5px; /* Add border radius to button */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button.addressbtn:hover {
+    background-color: #1d2124; /* Change button background color on hover */
+}
